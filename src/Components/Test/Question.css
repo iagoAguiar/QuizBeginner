@@ -1,10 +1,10 @@
 
 .app {
-     margin: 20% 20% 20% 30%;
+     margin: 10% 10% 10% 30%;
      background-color: cyan;
      width: 450px;
      min-height: 200px;
-     height: min-content;
+     height: 50%;
      border-radius: 15px;
      padding: 20px;
      box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
@@ -90,4 +90,11 @@
    
    button svg {
      margin-right: 5px;
+   }
+
+
+   @media(max-width: 500px){
+    .app { 
+      margin: 10%;
+    }
    }
