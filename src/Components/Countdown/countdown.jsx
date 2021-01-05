@@ -25,7 +25,7 @@ const Timer = () => {
 
      return(
      <div>
-          <div>Countdown: {counter}</div>
+          <div>Tempo: {counter}</div>
      </div>
      )
 }

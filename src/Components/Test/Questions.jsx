@@ -5,6 +5,8 @@ import Timer from '../Countdown/countdown'
 import {  Button  } from '@material-ui/core';
 
 export default function Question() {
+
+	
 	const questions = [
 		{
 			questionText: 'Qual é meu pet?',
@@ -47,6 +49,7 @@ export default function Question() {
 	const [currentQuestion, setCurrentQuestion] = useState(0);
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
+	const tempo = localStorage.getItem('@timer');
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
@@ -58,6 +61,7 @@ export default function Question() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
+			 
 		}
 	};
 	return (
@@ -65,8 +69,14 @@ export default function Question() {
 			<div className='conteudo'>
 			<div className='app'>
 				{showScore ? (
-					<div className='score-section'>
-						Você acertou: {score} de {questions.length}
+					<div>
+						<div className='score-section'>
+							Você acertou: {score} de {questions.length}
+							</div>
+						<div>	
+							Seu tempo foi: {tempo}
+						</div>
+
 					</div>
 				) : (
 					<>
