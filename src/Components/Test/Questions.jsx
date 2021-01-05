@@ -72,7 +72,7 @@ export default function Question() {
 		}
 	};
 	return (
-		<div>
+		<div className='fullheight'>
 			<div className='conteudo'>
 			<div className='app'>
 				{showScore ? (

@@ -94,7 +94,22 @@
 
 
    @media(max-width: 500px){
-    .app { 
-      margin: 10%;
+    .fullheight { 
+      width:100%;
+      margin:0 ;
+      padding-top:0;
+      height:100%;
+    }
+    .app{
+      background-color: cyan;
+      width: 30vh;
+      height: 100%;
+      padding: 2%;
+      border-radius: 15px;
+      box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+      display: inline;
+    }
+    .conteudo{
+      height: 10%;
     }
    }
