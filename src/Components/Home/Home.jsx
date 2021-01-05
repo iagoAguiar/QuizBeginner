@@ -4,7 +4,8 @@ import "./Home.css"
 import {  Button  } from '@material-ui/core';
 
 
- function Home() {
+export default function  Home() {
+     return(
      <div className="Home">
           <div className="Titulo">
                
@@ -16,10 +17,7 @@ import {  Button  } from '@material-ui/core';
 
 
      </div>
+
+     )
 };
 
-
-
-
-
-export default Home;

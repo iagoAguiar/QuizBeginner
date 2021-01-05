@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Question.css';
 
-function Question(){
+
+export default function Question() {
 	const questions = [
 		{
 			questionText: 'Qual é meu pet?',
@@ -84,4 +85,3 @@ function Question(){
 
 
 
-export default Question;
