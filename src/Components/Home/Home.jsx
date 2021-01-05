@@ -3,6 +3,8 @@ import "./Home.css"
 
 import {  Button  } from '@material-ui/core';
 
+localStorage.setItem('@timer', 0);
+
 
 export default function  Home() {
      return(
@@ -14,7 +16,7 @@ export default function  Home() {
           </div>
 
           <Button variant="contained" color="primary" href="Questions">Start </Button>
-
+          
 
      </div>
 

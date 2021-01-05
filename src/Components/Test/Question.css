@@ -12,6 +12,12 @@
      justify-content: space-between;
    }
    
+.conteudo{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: space-between;
+}
 .score-section {
      display: flex;
      font-size: 24px;
