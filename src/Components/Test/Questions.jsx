@@ -50,6 +50,7 @@ export default function Question() {
 	const [showScore, setShowScore] = useState(false);
 	const [score, setScore] = useState(0);
 	const tempo = localStorage.getItem('@timer');
+	const [resultado , setResultado] = useState();
 
 	const handleAnswerOptionClick = (isCorrect) => {
 		if (isCorrect) {
@@ -61,6 +62,12 @@ export default function Question() {
 			setCurrentQuestion(nextQuestion);
 		} else {
 			setShowScore(true);
+			if(score > 2){
+				setResultado("Você Passou!!!")
+			} else{
+				
+				setResultado("Você não Passou!!!")
+			}
 			 
 		}
 	};
@@ -76,7 +83,7 @@ export default function Question() {
 						<div>	
 							Seu tempo foi: {tempo}
 						</div>
-
+						<h1> {resultado}</h1>
 					</div>
 				) : (
 					<>
@@ -96,7 +103,6 @@ export default function Question() {
 				
 			</div>
 				<Button variant="contained" color="primary" href="Questions">Restart </Button>
-
 			</div>
 
 
